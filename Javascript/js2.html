@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+</head>
+<script>
+    // var a=10;
+    // function add(){
+    //     return (a+10);
+    // }
+    // alert(add());
+
+    // function prod(a,b){
+    //     return (a*b);
+    // }
+    // alert(prod(20,30));
+    // document.write("Product : "+prod(10,30));
+    // console.log(prod(40,50));
+
+    function fact(n){
+        var i=1;
+        if(n==0 || n==1)
+        return 1;
+        else{
+            return n*fact(n-1);
+        }
+    }
+    var result=fact(5);
+    document.write("Factorial = "+result);
+
+</script>
+<body>
+
+</body>
+</html>

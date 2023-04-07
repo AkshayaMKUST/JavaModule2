@@ -1,0 +1,24 @@
+<h2>Login</h2>
+<form (ngSubmit)="onSubmit()" class="form-group">
+    <table align="center">
+        <tr>
+            <td><label for="fullname">Fullname </label></td>
+            <td><input class="form-control" type="text" [(ngModel)]="name"  name="fullname" required=""></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email id : </label></td>
+               <td><input class="form-control" type="email" [(ngModel)]="email" name="email"></td> 
+            
+        </tr>
+        <tr>
+            <td><label for="password">Enter Password : </label></td>
+            <td><input class="form-control" type="password" [(ngModel)]="password" name="password" placeholder="password"></td>
+            
+        </tr>
+        <tr>
+            <td></td>
+                        <td> &nbsp; &nbsp;<input class="btn btn-primary" type="submit" value="Login">
+                        <button class="btn btn-secondary" value="Reset">Forgot Password</button></td>
+        </tr>
+        </table>
+</form>

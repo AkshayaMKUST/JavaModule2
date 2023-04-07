@@ -1,0 +1,25 @@
+<hr>
+    <div>
+        <h2>Products List</h2>
+        
+            <table border="2" style="padding: 10px;" align="center" class="table table-bordered">
+                
+                <thead>
+                    <th class="table-info">ID</th>
+                    <th class="table-info">Name</th>
+                    <th class="table-info">Price</th>
+                    <th class="table-info">Description</th>
+                    <th class="table-info">Quantity</th>
+                </thead>
+                
+                <tr *ngFor="let product of products" class="table-primary">
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.description}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.quantity}}</td>
+                </tr>
+                
+            </table>
+        
+    </div>

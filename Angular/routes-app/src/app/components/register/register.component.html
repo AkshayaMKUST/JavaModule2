@@ -1,0 +1,78 @@
+<h3 style="margin-left: 40px;">Create an account</h3>
+        <div>
+            <form (ngSubmit)="onSubmit()" class="form-group">
+                <table align="center">
+                    <tr>
+                        <td><label for="fullname">Fullname </label></td>
+                        <td><input class="form-control" type="text" [(ngModel)]="name"  name="fullname" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email id : </label></td>
+                           <td><input class="form-control" type="email" [(ngModel)]="email" name="email"></td> 
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="password">Enter Password : </label></td>
+                        <td><input class="form-control" type="password" [(ngModel)]="password" name="password" placeholder="password"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="password">Retype password : </label></td>
+                           <td><input class="form-control" type="text" [(ngModel)]="password" name="password" placeholder="password"></td> 
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="altemail">Alternate Email id : </label></td>
+                           <td><input class="form-control" type="email" [(ngModel)]="email" name="altemail"></td> 
+                        
+                    </tr>
+                
+                    <tr>
+                        <td><label for="dob">Date of Birth </label></td>
+                           <td><input class="form-select" type="date" [(ngModel)]="date" name="dob"></td> 
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td><label for="mobile">Mobile No </label></td>
+                        
+                       <td><input class="form-control"  type="text" [(ngModel)]="mobile" name="mobile" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender </label></td>
+                        <td>: &nbsp;<input class="form-check-input" type="radio" name="r1" value="Male" required>&nbsp;Male&nbsp;
+                        <input class="form-check-input" type="radio" name="r1" value="Female" required>&nbsp;Female&nbsp;
+                        <input class="form-check-input" type="radio" name="r1" value="Others" required>&nbsp;Others</td>
+                    </tr> 
+                    <tr>
+                        <td><label for="country">Country </label></td>
+                        <td><select class="form-select form-select-sm" name="country" id="">
+                            <option value="">Choose Country</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="UAE">UAE</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City </label></td>
+                        <td><select class="form-select form-select-sm" name="city" id="">
+                            <option value="">Choose City</option>
+                            <option value="TVM">Trivandrum</option>
+                            <option value="BNG">Bangalore</option>
+                            <option value="NY">New York</option>
+                            <option value="Cal">California</option>
+                        </select></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td></td>
+                        <td> &nbsp; &nbsp;<input class="btn btn-success" type="submit" value="Register">
+                        <button class="btn btn-info" type="reset" value="Reset">Reset</button></td>
+
+                    </tr>
+
+                </table>
+                
+            </form>
+            

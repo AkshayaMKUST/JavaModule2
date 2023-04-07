@@ -1,0 +1,81 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background-image:url(/images/lohp-category-marketing.jpg); */
+    border-top: rgb(7,7,7);
+    border-style: dashed;
+    border-color: red;
+    border-width: 3px;
+    background-color: azure;
+}
+
+div{
+    width: 200;
+    height: 100;
+    border: 10px;
+    border-color: brown;
+    border-style:double;
+    padding: 20px;
+    margin: 10px;
+}
+
+#first{
+    border-style: dotted;
+    border-color: black;
+}
+
+.p1{
+    background-color:lightgray;
+
+}
+.p2{
+    background-color:whitesmoke;
+
+}
+
+.first-para{
+    border-color: maroon;
+}
+
+#p-1{
+    font-style:italic;
+}
+#p-2{
+    font-size: smaller;
+    font-style: oblique;
+}
+#p-3{
+    font-size: medium;
+    font-style: initial;
+}
+.p3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
+}
+
+#first>h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#second>h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#third>h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span{
+    color: firebrick;
+}
+
+#p-2 > span{
+    color : blueviolet;
+
+}
+#first span{
+    color:hotpink;
+}

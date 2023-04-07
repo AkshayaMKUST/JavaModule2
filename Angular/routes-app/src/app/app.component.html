@@ -1,0 +1,41 @@
+<header>
+  <style>
+    nav{
+    text-align: center;
+    display: flex;
+    direction: row;
+    background-color:black;
+    
+  }
+  nav a{
+    color : whitesmoke;
+    
+  }
+  nav a:hover{
+      background-color: white;
+      color: darkslategrey;
+  }
+  a{
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  header{
+    height: 100px;
+  }
+  </style>
+  <h1>Angular</h1>
+  <div>
+    <nav>
+      <a routerLink="home">Home</a>
+      <a routerLink="login">Login</a>
+      <a routerLink="register">Registration</a>
+      <a routerLink="products">Products</a>
+    </nav>
+  </div>
+  
+</header>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
